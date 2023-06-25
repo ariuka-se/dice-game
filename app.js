@@ -40,7 +40,7 @@ document.querySelector('.btn-roll').addEventListener("click", function(){
             document.getElementById('current-'+activePlayer).textContent = roundScore;
         }else {
             scores[activePlayer] += roundScore;
-            document.getElementById('current-' + activePlayer).textContent = roundScore;
+            //document.getElementById('current-' + activePlayer).textContent = roundScore;
             togglePlayer();
         }
     }
