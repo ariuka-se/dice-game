@@ -1,7 +1,7 @@
 ## Pig (dice game)
 
 **Pig** is a simple "Dice game". This is a simple, easy-to-play one dice variant game. This was my first web app in javascript. 
-
+## I only write code of javascript src code url is https://github.com/ajaykumar1196/Pig-Game
 
 ## Simple UI
 
