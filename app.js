@@ -53,13 +53,14 @@ document.querySelector('.btn-roll').addEventListener("click", function(){
             document.getElementById("score-"+activePlayer).textContent = scores[activePlayer];
             document.querySelector('.player-'+activePlayer+'-panel').classList.add("winner");
             document.querySelector('.player-'+activePlayer+'-panel').style.backgroundImage = "url(winner.png)";
+            roundScore = 0;
             isGameOver = true;
         }else togglePlayer();
     });
     document.querySelector('.btn-new').addEventListener("click", init);
     function togglePlayer(){
         roundScore = 0;
-        
+        document.getElementById('current-'+activePlayer).textContent = roundScore;
         document.getElementById('score-'+ activePlayer).textContent = scores[activePlayer];
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove("active");
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
